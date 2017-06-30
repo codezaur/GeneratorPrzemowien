@@ -1,3 +1,5 @@
+var faceSound = new Audio("picsound.wav");
+
 	function makeStatement(){
 		var part1 =["Kaczyński", "Hoffman", "Macierewicz", "Brudziński", "Ziobro"];
 		var part2 =["swoim seansem nienawiści", "podczas tego obłędnego spędu", "tam, na Krakowskim Przemieściu",
@@ -14,6 +16,8 @@
 		alert(awesomeStatement);
 	}
 	makeStatement();
+
+	// faceSound.play();
 
 // <!-- add html/onclick/print on page instead of alert
 // https://mfiles.pl/pl/index.php/Uniwersalny_kod_przem%C3%B3wie%C5%84

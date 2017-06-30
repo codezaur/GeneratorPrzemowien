@@ -1,4 +1,18 @@
+.page-header {
+	text-align: center;
+	/*font-weight: bold;*/
+}
+
+.faces-container {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
 #faces {
 width: 160px;
 height: 160px;	
+}
+#faces:hover {
+border: 3px solid red;
 }

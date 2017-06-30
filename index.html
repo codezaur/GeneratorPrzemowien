@@ -3,13 +3,39 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<title>Generator Przemówień</title>
 </head>
 
 <body>
-<header>Wybierz swojego herosa:</header>
-<img id="faces" src="niesiol.jpg" alt="mowa nienawisci" />
+<div class="page-header">
+  <h1>Wybierz swojego Herosa <small>by poznać jego mądrość</small></h1>
+</div>
 
-<script src="generator.js"></script>	
+<div class="faces-container">
+	<div class=" col-md-4">
+	<img id="faces" src="niesiol.jpg" alt="mowa nienawisci" />
+	<div class="caption">
+        <h3>mowa nienawiści</h3>
+        <p>...</p>
+        </div>
+	</div>
+	<div class=" col-md-4">
+	<img id="faces" src="niesiol.jpg" alt="mowa nienawisci" />
+	<div class="caption">
+        <h3>propaganda sukcesu</h3>
+        <p>...</p>
+        </div>
+	</div>
+	<div class=" col-md-4">
+	<img id="faces" src="niesiol.jpg" alt="mowa nienawisci" />
+	<div class="caption">
+        <h3>marketingowy bełkot</h3>
+        <p>...</p>
+		</div>
+	</div>
+
+</div>
+<!-- <script src="generator.js"></script> -->	
 </body>
 </html>
