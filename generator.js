@@ -1,4 +1,5 @@
 var faceSound = new Audio("picsound.wav");
+var faceToClick = document.getElementById("faces");
 
 	function makeStatement(){
 		var part1 =["Kaczyński", "Hoffman", "Macierewicz", "Brudziński", "Ziobro"];
@@ -14,27 +15,34 @@ var faceSound = new Audio("picsound.wav");
 
 		var awesomeStatement = part1[rand1] +" "+ part2[rand2]+" "+ part3[rand3]+" "+part4[rand4];
 		document.getElementById("wisdom").innerHTML = awesomeStatement;
+
 	}
 	makeStatement();
 
-	
+
 	function soundOnPicture(){
-	var faceToClick = document.getElementById("faces");
-	faceToClick.onclick = faceSound.play();
-	}
-
-	// function playThis(){
-	// 	faceSound.play();
-	// }
-	window.onload = soundOnPicture;
+		var faceToClick = document.getElementById("faces");
+		faceToClick.onmouseover = faceSound.play();
+		}
+	faceToClick.onmouseover = soundOnPicture;
 
 
-	// for(var i =0; i<faceToClick.length; i++){
-	// 	faceToClick[i].onclick = playThis;
-	// }
-	// document.getElementById("faces").onMouseOver = faceSound.play(); 
+	// only works on 1st pic and only once (global variable used)
+	// 	function soundOnPicture(){
+	// 	var faceToClick = document.getElementById("faces");
+	// 	faceToClick.onmouseover = faceSound.play();
+	// 	}
+	// faceToClick.onmouseover = soundOnPicture;
 
-	// faceSound.play();
+	// this dosnt work
+	// function soundOnPicture(){
+	// 	var faceToClick = document.getElementById("faces");
+	// 	for(var i=0;i<faceToClick.length;i++){
+	// 	if(faceToClick[i].id=="faces")
+	// 	faceToClick[i].onclick = faceSound.play();
+	// 	}
+	// 	}
+	// faceToClick.onclick = soundOnPicture;
 
 // <!-- add html/onclick/print on page instead of alert
 // https://mfiles.pl/pl/index.php/Uniwersalny_kod_przem%C3%B3wie%C5%84
