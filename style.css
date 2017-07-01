@@ -1,6 +1,6 @@
+
 .page-header {
 	text-align: center;
-	/*font-weight: bold;*/
 }
 
 .faces-container {
@@ -15,4 +15,9 @@ height: 160px;
 }
 #faces:hover {
 border: 3px solid red;
+}
+
+#wisdom {
+	text-align: center;
+	font-size: 20px;
 }
