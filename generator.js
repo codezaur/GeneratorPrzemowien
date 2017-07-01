@@ -1,8 +1,5 @@
 var faceSound = new Audio("picsound.wav");
-// var faceToClick = document.getElementById("faces");
-// var faceToClick = document.getElementsByTagName("faces");
-
-var faceToClick = document.querySelectorAll(".headphotos");
+var faceToClick = document.querySelectorAll("#faces");
 
 	function makeStatement(){
 		var part1 =["Kaczyński", "Hoffman", "Macierewicz", "Brudziński", "Ziobro"];
@@ -16,39 +13,21 @@ var faceToClick = document.querySelectorAll(".headphotos");
 		var rand3 = Math.floor(Math.random()*part3.length);
 		var rand4 = Math.floor(Math.random()*part4.length);
 
-		var awesomeStatement = part1[rand1] +" "+ part2[rand2]+" "+ part3[rand3]+" "+part4[rand4];
+		var awesomeStatement = (part1[rand1] +" "+ part2[rand2]+" "+ part3[rand3]+" "+part4[rand4])
+							+"<br>"+(part1[rand1] +" "+ part2[rand2]+" "+ part3[rand3]+" "+part4[rand4]);
+						
 		document.getElementById("wisdom").innerHTML = awesomeStatement;
-
 	}
 
 	function soundOnPicture(){
 	faceToClick.onmouseover = faceSound.play();
 	}
 
+for (var i=0;i<faceToClick.length;i++){
 faceToClick[i].addEventListener("mouseover", soundOnPicture);
 faceToClick[i].addEventListener("click", makeStatement);
+}
 
-//works only on 1st picture
-// faceToClick.addEventListener("mouseover", soundOnPicture);
-// faceToClick.addEventListener("click", makeStatement);
-
-
-	// only works on 1st pic and only once (global variable used)
-	// 	function soundOnPicture(){
-	// 	var faceToClick = document.getElementById("faces");// this is already defined!
-	// 	faceToClick.onmouseover = faceSound.play();
-	// 	}
-	// faceToClick.onmouseover = soundOnPicture;
-
-	// this dosnt work
-	// function soundOnPicture(){
-	// 	var faceToClick = document.getElementById("faces");
-	// 	for(var i=0;i<faceToClick.length;i++){
-	// 	if(faceToClick[i].id=="faces")
-	// 	faceToClick[i].onclick = faceSound.play();
-	// 	}
-	// 	}
-	// faceToClick.onclick = soundOnPicture;
 
 // <!-- add html/onclick/print on page instead of alert
 // https://mfiles.pl/pl/index.php/Uniwersalny_kod_przem%C3%B3wie%C5%84
