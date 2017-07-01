@@ -1,5 +1,8 @@
 var faceSound = new Audio("picsound.wav");
-var faceToClick = document.getElementById("faces");
+// var faceToClick = document.getElementById("faces");
+// var faceToClick = document.getElementsByTagName("faces");
+
+var faceToClick = document.querySelectorAll(".headphotos");
 
 	function makeStatement(){
 		var part1 =["Kaczyński", "Hoffman", "Macierewicz", "Brudziński", "Ziobro"];
@@ -17,19 +20,22 @@ var faceToClick = document.getElementById("faces");
 		document.getElementById("wisdom").innerHTML = awesomeStatement;
 
 	}
-	makeStatement();
-
 
 	function soundOnPicture(){
-		var faceToClick = document.getElementById("faces");
-		faceToClick.onmouseover = faceSound.play();
-		}
-	faceToClick.onmouseover = soundOnPicture;
+	faceToClick.onmouseover = faceSound.play();
+	}
+
+faceToClick[i].addEventListener("mouseover", soundOnPicture);
+faceToClick[i].addEventListener("click", makeStatement);
+
+//works only on 1st picture
+// faceToClick.addEventListener("mouseover", soundOnPicture);
+// faceToClick.addEventListener("click", makeStatement);
 
 
 	// only works on 1st pic and only once (global variable used)
 	// 	function soundOnPicture(){
-	// 	var faceToClick = document.getElementById("faces");
+	// 	var faceToClick = document.getElementById("faces");// this is already defined!
 	// 	faceToClick.onmouseover = faceSound.play();
 	// 	}
 	// faceToClick.onmouseover = soundOnPicture;
