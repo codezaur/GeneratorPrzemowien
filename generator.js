@@ -1,3 +1,5 @@
+(function (){
+
 var faceSound = new Audio("picsound.wav");
 var faceToClick = document.querySelectorAll("#faces");
 
@@ -111,7 +113,7 @@ var faceToClick = document.querySelectorAll("#faces");
 		var part1 =["Biało-czerwona drużyno:", "Należy też jasno podkreślić, że", "Sytuacja dojrzała do tego, by powiedzieć wprost:", "Co więcej:", "Minione lata lata w sposób oczywisty wręcz dowiodły, że", "Z drugiej strony:", "Każdy kto interesuje się Polską, wie, że", "Jak na dłoni widać, że naszą głęboką troskę budzi fakt, że", "Z najwyższym zaniepokojeniem obserwujemy, iż", "Niestety,", "Mamy też niezbite dowody, że"];
 		var part2 =["koła liberalne,", "wrogie nam ośrodki niemieckie,", "sprzedające się za sowite gratyfikacje środowiska aktorskie,", "Owsiaki i inne glisty ludzkie,", "resortowe dzieci,", "agentury obcych wywiadów", "skompromitowane do szczętu autorytety,", "inspirowane z zewnątrz wiadome grupy interesów,", "gender, homopolityka i walka z chrześcijaństwem,", "kręgi rowerzystów i wegetarian,", "tysiące post-Polaków,", "skompromitowane postkolonialne pseudoelity,"];
 		var part3 =["odpowiedzialne za fatalną gospodarkę leśną,", "które zrujnowały kraj,", "z satysfakcją obserwujące upadek rodzimego górnictwa,", "szargające na deskach swoich pseudoteatrzyków wszystko, co cenne,", "suflujące nam ideowo wzorce rodem ze zdemoralizowanego Zachodu,", "pasożytujące na gospodarce narodowej,", "wyprowadzające od lat kapitał za granicę,", "które żyją z podgryzania naszych ideowych korzeni,", "bezpardonowo niszczące rynek nawozów sztucznych,", "które doprowadziły do ruiny polski przemysł stoczniowy,", "które specjalizują się w erozji ideowej,", "płodzące w zaciszu swoich gabinetów aksjologiczne brednie,"];
-		var part4 =["odpowiedzią za swoje zbrodnie przed Bogiem i prezesem.", "są tworem porządku pojałtańskiego i mrocznych czasów rewanżyzmu.", "muszą zniknąć z powierzchni polskiego życia publicznego.", "odcięły się od życiodajnych źródeł tradycji, kultury i myśli narodowej.", "straciły mandat do wypowiadania się na istotne dla narodu polskiego tematy.", "mamiły nas wizjami zielonej wyspy i ciepłej wody w kranie.", "powielają porządek targowicy i są ideowymi prawnukami carycy Katarzyny.", "muszą szukać swego miejsca gdzie indziej.", "pozostają póki co bezkarne.", "nie ustają w nagonce na tworzący się nowy ład.", "ulegają podszeptom wichrzycieli oraz kłamliwej propagandy ośrodków zagranicznych.", "pod płaszczykiem modernizacji planują dalsze akty destrukcji."];
+		var part4 =["odpowiedzą za swoje zbrodnie przed Bogiem i prezesem.", "są tworem porządku pojałtańskiego i mrocznych czasów rewanżyzmu.", "muszą zniknąć z powierzchni polskiego życia publicznego.", "odcięły się od życiodajnych źródeł tradycji, kultury i myśli narodowej.", "straciły mandat do wypowiadania się na istotne dla narodu polskiego tematy.", "mamiły nas wizjami zielonej wyspy i ciepłej wody w kranie.", "powielają porządek targowicy i są ideowymi prawnukami carycy Katarzyny.", "muszą szukać swego miejsca gdzie indziej.", "pozostają póki co bezkarne.", "nie ustają w nagonce na tworzący się nowy ład.", "ulegają podszeptom wichrzycieli oraz kłamliwej propagandy ośrodków zagranicznych.", "pod płaszczykiem modernizacji planują dalsze akty destrukcji."];
 	
 		var rand1 = Math.floor(Math.random()*part1.length);
 		var rand2 = Math.floor(Math.random()*part2.length);
@@ -170,6 +172,7 @@ faceToClick[1].addEventListener("click", makeGomulkaStatement);
 faceToClick[2].addEventListener("click", makePISStatement);
 }
 
+})()
 
 // Speech sources: 
 // https://mfiles.pl/pl/index.php/Uniwersalny_kod_przem%C3%B3wie%C5%84
