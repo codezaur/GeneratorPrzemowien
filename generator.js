@@ -178,3 +178,11 @@ faceToClick[2].addEventListener("click", makePISStatement);
 // https://mfiles.pl/pl/index.php/Uniwersalny_kod_przem%C3%B3wie%C5%84
 // http://bi.gazeta.pl/im/00/9c/12/z19515648P,Tabelka.jpg
 // http://joemonster.org/phorum/read.php?f=18&t=561350
+
+/*
+review by Kuba:
+1. (+ DONE) IIEF (function (){ var a = 10; })()
+2. webpack + bootstrap (dependencies management)
+3. awesome Statement empty and in loop iterate table 7 times and build string, var a = "", a += "b", a += "c"
+4. XML http request (tables in separate file)
+*/
