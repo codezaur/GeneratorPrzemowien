@@ -157,6 +157,18 @@ var faceToClick = document.querySelectorAll("#faces");
 							+" "+(part1[rand17] +" "+ part2[rand18]+" "+ part3[rand19]+" "+part4[rand20])
 							+" "+(part1[rand21] +" "+ part2[rand22]+" "+ part3[rand23]+" "+part4[rand24])+"</p>"
 							+"<br>"+(part1[rand25] +" "+ part2[rand26]+" "+ part3[rand27]+" "+part4[rand28]);
+
+		/* awesomeStatement refactoring
+		how can we iterate table .. if there are 4 tables of different lenth?
+
+		var awesomeStatement = [];
+		
+		for (var i=0; i< part1.lenth; i++){ 
+
+		awesomeStatement += part1[rand1];
+		awesomeStatement += part2[rand2];
+		}
+		*/
 						
 		document.getElementById("wisdom").innerHTML = awesomeStatement;
 	}
