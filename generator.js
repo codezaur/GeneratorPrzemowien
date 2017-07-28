@@ -115,6 +115,7 @@ var faceToClick = document.querySelectorAll("#faces");
 		var part3 =["odpowiedzialne za fatalną gospodarkę leśną,", "które zrujnowały kraj,", "z satysfakcją obserwujące upadek rodzimego górnictwa,", "szargające na deskach swoich pseudoteatrzyków wszystko, co cenne,", "suflujące nam ideowo wzorce rodem ze zdemoralizowanego Zachodu,", "pasożytujące na gospodarce narodowej,", "wyprowadzające od lat kapitał za granicę,", "które żyją z podgryzania naszych ideowych korzeni,", "bezpardonowo niszczące rynek nawozów sztucznych,", "które doprowadziły do ruiny polski przemysł stoczniowy,", "które specjalizują się w erozji ideowej,", "płodzące w zaciszu swoich gabinetów aksjologiczne brednie,"];
 		var part4 =["odpowiedzą za swoje zbrodnie przed Bogiem i prezesem.", "są tworem porządku pojałtańskiego i mrocznych czasów rewanżyzmu.", "muszą zniknąć z powierzchni polskiego życia publicznego.", "odcięły się od życiodajnych źródeł tradycji, kultury i myśli narodowej.", "straciły mandat do wypowiadania się na istotne dla narodu polskiego tematy.", "mamiły nas wizjami zielonej wyspy i ciepłej wody w kranie.", "powielają porządek targowicy i są ideowymi prawnukami carycy Katarzyny.", "muszą szukać swego miejsca gdzie indziej.", "pozostają póki co bezkarne.", "nie ustają w nagonce na tworzący się nowy ład.", "ulegają podszeptom wichrzycieli oraz kłamliwej propagandy ośrodków zagranicznych.", "pod płaszczykiem modernizacji planują dalsze akty destrukcji."];
 	
+		//var randNumb = [ 
 		var rand1 = Math.floor(Math.random()*part1.length);
 		var rand2 = Math.floor(Math.random()*part2.length);
 		var rand3 = Math.floor(Math.random()*part3.length);
@@ -150,6 +151,8 @@ var faceToClick = document.querySelectorAll("#faces");
 		var rand27 = Math.floor(Math.random()*part3.length);
 		var rand28 = Math.floor(Math.random()*part4.length);
 
+		// ]
+
 		var awesomeStatement = "<p>"+(part1[rand1] +" "+ part2[rand2]+" "+ part3[rand3]+" "+part4[rand4])
 							+" "+(part1[rand5] +" "+ part2[rand6]+" "+ part3[rand7]+" "+part4[rand8])
 							+" "+(part1[rand9] +" "+ part2[rand10]+" "+ part3[rand11]+" "+part4[rand12])+"</p>"
@@ -159,14 +162,15 @@ var faceToClick = document.querySelectorAll("#faces");
 							+"<br>"+(part1[rand25] +" "+ part2[rand26]+" "+ part3[rand27]+" "+part4[rand28]);
 
 		/* awesomeStatement refactoring
-		how can we iterate table .. if there are 4 tables of different lenth?
 
 		var awesomeStatement = [];
 		
-		for (var i=0; i< part1.lenth; i++){ 
+		for (var i=0; i< 7; i++){ 
 
-		awesomeStatement += part1[rand1];
-		awesomeStatement += part2[rand2];
+		awesomeStatement += part1[randNumb[i]];
+		awesomeStatement += part2[randNumb[i]];
+		awesomeStatement += part3[randNumb[i]];
+		awesomeStatement += part4[Math.floor(Math.random()*part4.length)];
 		}
 		*/
 						
