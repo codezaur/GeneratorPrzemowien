@@ -96,6 +96,6 @@ faceToClick[2].addEventListener("click", makePISStatement);
 review by Kuba:
 1. (+ DONE) IIFE (function (){ var a = 10; })()
 2. webpack + bootstrap (dependencies management)
-3. awesome Statement empty and in loop iterate table 7 times and build string, var a = "", a += "b", a += "c"
+3. (+DONE) awesome Statement empty and in loop iterate table 7 times and build string, var a = "", a += "b", a += "c"
 4. XML http request (tables in separate file)
 */
