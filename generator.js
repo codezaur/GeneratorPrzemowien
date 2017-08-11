@@ -3,6 +3,14 @@
 var faceSound = new Audio("picsound.wav");
 var faceToClick = document.querySelectorAll("#faces");
 
+window.onload = function(){
+	var url = "http:localhost/statementsParts.json";
+	var request = new XMLHttpRequest();
+	request.open("GET", url);
+	
+
+}
+
 	function makeNiesiolStatement(){
 		/*
 		var part1 =["Kaczyński", "Ten obrzydliwy, załgany hipokryta", "Hoffman", "Ten kandydat do kliniki psychiatrycznej", "Macierewicz", "Brudziński", "Ziobro", "PIS", "Ten PISowski pachołek", "Ten faszystowski aparatczyk"];
@@ -16,10 +24,10 @@ var faceToClick = document.querySelectorAll("#faces");
 		
 		for (var i=0; i< 7; i++){ 
 
-		awesomeStatement += " "+part1[Math.floor(Math.random()*part1.length)];
-		awesomeStatement += " "+part2[Math.floor(Math.random()*part2.length)];
-		awesomeStatement += " "+part3[Math.floor(Math.random()*part3.length)];
-		awesomeStatement += " "+part4[Math.floor(Math.random()*part4.length)];
+		awesomeStatement += " "+JSON.parse(part1[Math.floor(Math.random()*part1.length)]);
+		awesomeStatement += " "+JSON.parse(part2[Math.floor(Math.random()*part2.length)]);
+		awesomeStatement += " "+JSON.parse(part3[Math.floor(Math.random()*part3.length)]);
+		awesomeStatement += " "+JSON.parse(part4[Math.floor(Math.random()*part4.length)]);
 		
 		if(i==2||i==5){
 			awesomeStatement += " " +"</p>";
