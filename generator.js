@@ -4,12 +4,14 @@ var faceSound = new Audio("picsound.wav");
 var faceToClick = document.querySelectorAll("#faces");
 
 	function makeNiesiolStatement(){
+		/*
 		var part1 =["Kaczyński", "Ten obrzydliwy, załgany hipokryta", "Hoffman", "Ten kandydat do kliniki psychiatrycznej", "Macierewicz", "Brudziński", "Ziobro", "PIS", "Ten PISowski pachołek", "Ten faszystowski aparatczyk"];
 		var part2 =["swoim seansem nienawiści", "podczas tego PiS-owskiego, lizusowskiego spektaklu", "żerując na powszechnych fobiach i ignorancji", "swoimi wymiocinami szkalując lepszych od siebie", "podczas tego obłędnego spędu", "swoim wściekłym ujadaniem", "tam, na Krakowskim Przemieściu",
 		"mówiąc te dyrdymały, bzdury i wypociny", "oczerniając i obrzucając błotem premiera", "łamiąc konstytucję"];
 		var part3 =["pokazał chamstwo i bezczelność", "sprowadzając do Polski całe to bagno, tę małpiarnię", "dając popis hipokryzji i cynizmu", "tonie w szambie własnej choroby psychicznej", "przekroczył granicę zbydlęcenia", "ujawnił bagno swojej degradacji", "szkodzi dobremu wizerunkowi Polski", "podnosi rękę na demokratyczny rząd", "zachowuje się jak nazista", "pokazał swój rasizm"];
 		var part4 =["prowadzi nas do wojny domowej.", "za jego sprawą do władzy dojdą populiści, demagodzy, nacjonaliści i ludzie niezwykle niebezpieczni dla Polski.", "przekroczył granicę podłości.", " -to już obrzydliwe!", "pokazał swe prostactwo moralne.", "pokazał swoje skarłowacenie i zwyrodnienie.", "podpala Polskę i dzieli Polaków.", "-powinien trafić do szpitala psychiatrycznego.", "zszedł poniżej poziomu dna wyznacznonego przez Kępę.", "i jest zagrożeniem dla demokracji."];
-	
+		*/
+
 		var awesomeStatement = [];
 		
 		for (var i=0; i< 7; i++){ 
