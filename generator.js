@@ -12,19 +12,15 @@ request.send(null);
 	function makeNiesiolStatement(){
 		
 		var statements = JSON.parse(request.responseText);
-		var part1 = statements.part1;
-		var part2 = statements.part2;
-		var part3 = statements.part3;
-		var part4 = statements.part4;
-
+	
 		var awesomeStatement = [];
 		
 		for (var i=0; i< 7; i++){ 
 
-		awesomeStatement += " "+part1[Math.floor(Math.random()*part1.length)];
-		awesomeStatement += " "+part2[Math.floor(Math.random()*part2.length)];
-		awesomeStatement += " "+part3[Math.floor(Math.random()*part3.length)];
-		awesomeStatement += " "+part4[Math.floor(Math.random()*part4.length)];
+		awesomeStatement += " "+statements.part1[Math.floor(Math.random()*statements.part1.length)];
+		awesomeStatement += " "+statements.part2[Math.floor(Math.random()*statements.part2.length)];
+		awesomeStatement += " "+statements.part3[Math.floor(Math.random()*statements.part3.length)];
+		awesomeStatement += " "+statements.part4[Math.floor(Math.random()*statements.part4.length)];
 		
 		if(i==2||i==5){
 			awesomeStatement += " " +"</p>";
@@ -38,19 +34,15 @@ request.send(null);
 	function makeGomulkaStatement(){
 	
 		var statements = JSON.parse(request.responseText);
-		var part1 = statements.part5;
-		var part2 = statements.part6;
-		var part3 = statements.part7;
-		var part4 = statements.part8;
 
 		var awesomeStatement = [];
 		
 		for (var i=0; i< 7; i++){ 
 
-		awesomeStatement += " "+part1[Math.floor(Math.random()*part1.length)];
-		awesomeStatement += " "+part2[Math.floor(Math.random()*part2.length)];
-		awesomeStatement += " "+part3[Math.floor(Math.random()*part3.length)];
-		awesomeStatement += " "+part4[Math.floor(Math.random()*part4.length)];
+		awesomeStatement += " "+statements.part5[Math.floor(Math.random()*statements.part5.length)];
+		awesomeStatement += " "+statements.part6[Math.floor(Math.random()*statements.part6.length)];
+		awesomeStatement += " "+statements.part7[Math.floor(Math.random()*statements.part7.length)];
+		awesomeStatement += " "+statements.part8[Math.floor(Math.random()*statements.part8.length)];
 		
 		if(i==2||i==5){
 			awesomeStatement += " " +"</p>";
@@ -63,19 +55,15 @@ request.send(null);
 	function makePISStatement(){
 
 		var statements = JSON.parse(request.responseText);
-		var part1 = statements.part9;
-		var part2 = statements.part10;
-		var part3 = statements.part11;
-		var part4 = statements.part12;
 
 		var awesomeStatement = [];
 		
 		for (var i=0; i< 7; i++){ 
 
-		awesomeStatement += " "+part1[Math.floor(Math.random()*part1.length)];
-		awesomeStatement += " "+part2[Math.floor(Math.random()*part2.length)];
-		awesomeStatement += " "+part3[Math.floor(Math.random()*part3.length)];
-		awesomeStatement += " "+part4[Math.floor(Math.random()*part4.length)];
+		awesomeStatement += " "+statements.part9[Math.floor(Math.random()*statements.part9.length)];
+		awesomeStatement += " "+statements.part10[Math.floor(Math.random()*statements.part10.length)];
+		awesomeStatement += " "+statements.part11[Math.floor(Math.random()*statements.part11.length)];
+		awesomeStatement += " "+statements.part12[Math.floor(Math.random()*statements.part12.length)];
 		
 		if(i==2||i==5){
 			awesomeStatement += " " +"</p>";
