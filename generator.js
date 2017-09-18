@@ -11,9 +11,8 @@ request.send(null);
 
 	function makeNiesiolStatement(){
 		
-		var statements = JSON.parse(request.responseText);
-	
-		var awesomeStatement = [];
+		var statements = JSON.parse(request.responseText),
+			awesomeStatement = [];
 		
 		for (var i=0; i< 7; i++){ 
 
@@ -33,9 +32,8 @@ request.send(null);
 
 	function makeGomulkaStatement(){
 	
-		var statements = JSON.parse(request.responseText);
-
-		var awesomeStatement = [];
+		var statements = JSON.parse(request.responseText),
+			awesomeStatement = [];
 		
 		for (var i=0; i< 7; i++){ 
 
@@ -54,9 +52,8 @@ request.send(null);
 
 	function makePISStatement(){
 
-		var statements = JSON.parse(request.responseText);
-
-		var awesomeStatement = [];
+		var statements = JSON.parse(request.responseText),
+			awesomeStatement = [];
 		
 		for (var i=0; i< 7; i++){ 
 
