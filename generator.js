@@ -1,7 +1,7 @@
 (function (){
 
-var faceSound = new Audio("picsound.wav");
-var faceToClick = document.querySelectorAll("#faces");
+var faceSound = new Audio("picsound.wav"),
+	faceToClick = document.querySelectorAll("#faces");
 
 var url = "http://undefined2055.eu/GeneratorPrzemowien/statementsParts.json";
 var request = new XMLHttpRequest();
