@@ -5,10 +5,11 @@ var faceSound = new Audio("picsound.wav"),
 
 var url = "http://undefined2055.eu/GeneratorPrzemowien/statementsParts.json";
 var request = new XMLHttpRequest();
+request.onload = requestListener();
 request.open("GET", url);
 request.send(null);
-// var statements = JSON.parse(request.responseText);
 
+function requestListener() {
 	function makeNiesiolStatement(){
 		
 		var statements = JSON.parse(request.responseText),
@@ -81,6 +82,7 @@ faceToClick[1].addEventListener("click", makeGomulkaStatement);
 faceToClick[2].addEventListener("click", makePISStatement);
 }
 
+}
 })()
 
 // Speech sources: 
