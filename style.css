@@ -22,6 +22,10 @@ border: 3px solid red;
 	margin-right: 45px;
 }
 
+.wisdom-container {
+	display: none;
+}
+
 #wisdom {
 	text-align: left;
 	font-size: 16px;
