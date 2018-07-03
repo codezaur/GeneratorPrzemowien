@@ -3,7 +3,7 @@
 var faceSound = new Audio("picsound.wav"),
 	faceToClick = document.querySelectorAll("#faces");
 
-var url = "http://undefined2055.eu/GeneratorPrzemowien/statementsParts.json";
+var url = "http://syntaxerror2055.eu/GeneratorPrzemowien/statementsParts.json";
 var request = new XMLHttpRequest();
 request.onload = requestListener();
 request.open("GET", url);
